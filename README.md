@@ -1,32 +1,25 @@
-# George Kujo Website v1.2
+# George Kujo Website V2.0
 
-## v1.2の変更点
-
-- スマートフォンで日本語／English切替を常時表示
-- モバイル用ハンバーガーメニューを実装
-- HeroのKnowledge / Integrity / Responsibilityの重なりを修正
-- JME論文をDOIの直接リンクへ変更
-- BMJ Medical Ethics Blogを実在ページへ接続
-- Zenodoの具体的なレコードとORCID検索リンクを追加
-- 「査読済み」「Commentary」「Translation」「Preprint」を区別
-- OGP、canonical、JSON-LDを更新
-- 小型スマートフォン向け表示を調整
-- 404ページを追加
+## 主な追加
+- トップページをブランドサイトとして再設計
+- Research Hub (`research.html`) を新設
+- Featured Researchを4テーマに整理
+- Publicationsを直接リンク中心に再構成
+- Philosophyセクションを刷新
+- モバイル日本語切替とハンバーガーメニューを維持
+- PCのみ控えめなパララックス効果
+- SEO / OGP / JSON-LD
+- GitHub Pages / 独自ドメイン対応
 
 ## GitHubへの反映
+1. ZIPを解凍
+2. リポジトリ `GeorgeKujo.github.io` のルートへ全ファイルを上書きアップロード
+3. `assets` フォルダ内の画像3点もアップロード
+4. Commit changes
+5. 数分後に `https://georgekujo.com` を再読み込み
 
-1. ZIPを解凍します。
-2. GitHubの `GeorgeKujo/GeorgeKujo.github.io` を開きます。
-3. `Add file` → `Upload files` を選択します。
-4. 解凍したフォルダ内のファイルをすべて上書きアップロードします。
-5. `assets` 内の画像3点も既存の `assets` フォルダへアップロードします。
-6. `Commit changes` を押します。
-7. 数分後、スマートフォンとPCで `https://georgekujo.com` を再読み込みします。
-
-## 独自ドメインメール
-
-現在の連絡先は既存Gmailです。
-独自ドメインメール作成後、`index.html` 内の
+## 注意
+独自ドメインメール作成後、`index.html` と `research.html` の
 `george.kujo.irjp@gmail.com`
 を
 `contact@georgekujo.com`
