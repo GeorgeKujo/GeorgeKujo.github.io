@@ -1,15 +1,11 @@
-# georgekujo.com
+# George Kujo 完成版サイト
 
-GitHub Pages用の静的ホームページです。
+## GitHubへの反映
+1. ZIPを解凍する。
+2. `GeorgeKujo.github.io` リポジトリを開く。
+3. 今回のファイル一式で既存ファイルを置き換える。
+4. `assets` フォルダもそのままアップロードする。
+5. Commit changesを押す。
+6. 数分後に `https://georgekujo.com` を再読み込みする。
 
-## 公開手順
-
-1. GitHubで公開リポジトリを作成します。
-2. このフォルダの全ファイルをリポジトリ直下へアップロードします。
-3. Settings → Pages を開きます。
-4. Sourceを Deploy from a branch にします。
-5. Branchを main、Folderを /(root) にして保存します。
-6. Custom domain に georgekujo.com を入力します。
-7. DNS設定完了後、Enforce HTTPS を有効にします。
-
-別ドメインを使う場合は、CNAME、index.html、robots.txt、sitemap.xml 内の georgekujo.com を置換してください。
+現在の連絡先は既存Gmailです。独自ドメインメール作成後、`index.html` 内のメールアドレスを置換してください。
