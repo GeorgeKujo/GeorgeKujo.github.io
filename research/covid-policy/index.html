@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07111f"><title>COVID-19 Policy Review — George Kujo</title><meta name="description" content="A retrospective examination of evidence quality, emergency governance, institutional inertia, and exit mechanisms."><link rel="canonical" href="https://georgekujo.com/research/covid-policy/"><link rel="alternate" hreflang="ja" href="https://georgekujo.com/ja/research/covid-policy/"><link rel="alternate" hreflang="x-default" href="https://georgekujo.com/"><link rel="icon" href="/assets/emblem.jpg" type="image/jpeg"><meta property="og:type" content="website"><meta property="og:title" content="COVID-19 Policy Review — George Kujo"><meta property="og:description" content="A retrospective examination of evidence quality, emergency governance, institutional inertia, and exit mechanisms."><meta property="og:url" content="https://georgekujo.com/research/covid-policy/"><meta property="og:image" content="https://georgekujo.com/og.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"George Kujo","alternateName":"九条丈二","jobTitle":"Independent Researcher","url":"https://georgekujo.com/","image":"https://georgekujo.com/assets/portrait.jpeg","sameAs":["https://orcid.org/0009-0006-6864-0145","https://zenodo.org/search?q=creators.orcid%3A%220009-0006-6864-0145%22","https://agora-web.jp/archives/author/george_kujo","https://note.com/g_kujo_ir","https://x.com/cavid19w"]}</script><link rel="stylesheet" href="/_astro/index.S6zGrEO4.css"></head> <body class="inner-page"> <a class="skip-link" href="#main">Skip to content</a> <header class="site-header" data-header> <div class="nav-shell"> <a class="brand" href="/" aria-label="George Kujo home"> <img src="/assets/emblem.jpg" alt="" width="40" height="40"> <span>George Kujo</span> </a> <nav class="main-nav" aria-label="Primary navigation" data-menu> <a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/writing/">Writing</a><a href="/about/">About</a><a href="/contact/">Contact</a> </nav> <div class="header-actions"> <a class="language-link" href="/ja/research/covid-policy/" hreflang="ja"> 日本語 </a> <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button> <span></span><span></span> </button> </div> </div> </header> <main id="main"> <section class="project-hero"><div class="article-shell"><div class="project-hero-meta"><span>Policy Review</span><span>Ongoing</span><span>Updated 2026-07</span></div><h1>COVID-19 Policy Review</h1><p class="lead">A retrospective examination of evidence quality, emergency governance, institutional inertia, and exit mechanisms.</p></div></section> <article class="project-body"><div class="article-shell"> <section class="project-section" data-reveal><h2>Research question</h2><div><p>Which emergency policies remained proportionate as evidence changed, and which lacked a workable exit mechanism?</p></div></section> <section class="project-section" data-reveal><h2>Why it matters</h2><div><p>Retrospective review is necessary to distinguish measures that were justified by uncertainty from systems maintained after that justification weakened.</p></div></section> <section class="project-section" data-reveal><h2>Evidence & method</h2><div class="method-pills"><span>Evidence review</span><span>Policy chronology</span><span>Institutional analysis</span></div></section> <section class="project-section" data-reveal><h2>Public outputs</h2><div><p>This project is ongoing. Public outputs will be linked here when released.</p></div></section>  <section class="project-section" data-reveal><h2>Disclosure</h2><div><p>Independent research. No institutional affiliation is claimed on this page. Project-specific funding, conflicts, limitations, and corrections will be recorded with each output.</p><a class="text-link" href="/research-integrity/">Research integrity statement →</a></div></section> </div></article> </main> <footer class="site-footer"> <div class="shell footer-grid"> <div class="footer-identity"> <img src="/assets/emblem.jpg" alt="" width="58" height="58"> <div> <strong>George Kujo</strong> <span>Independent Researcher</span> </div> </div> <div class="footer-fields"> <span>Medical Ethics</span><span>Public Policy</span><span>Consumer Protection</span><span>Institutional Accountability</span> </div> <div class="footer-links"> <a href="https://agora-web.jp/archives/author/george_kujo" target="_blank" rel="author noopener">Agora — Main media</a> <a href="https://note.com/g_kujo_ir" target="_blank" rel="author noopener">note — Main media</a> <a href="https://georgekujo.substack.com/" target="_blank" rel="author noopener">Substack</a> <a href="https://x.com/cavid19w" target="_blank" rel="me noopener">X</a> <a href="https://orcid.org/0009-0006-6864-0145" target="_blank" rel="me noopener">ORCID</a> <a href="https://zenodo.org/search?q=creators.orcid%3A%220009-0006-6864-0145%22" target="_blank" rel="noopener">Zenodo</a> <a href="/research-integrity/">Research integrity</a> </div> <div class="footer-meta"> <span>© 2026 George Kujo</span> <span>ORCID 0009-0006-6864-0145</span> </div> </div> </footer> <script>
+      const header = document.querySelector('[data-header]');
+      const menuButton = document.querySelector('[data-menu-button]');
+      const menu = document.querySelector('[data-menu]');
+      const heroMedia = document.querySelector('[data-hero-media]');
+
+      const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 24);
+      updateHeader();
+      window.addEventListener('scroll', () => {
+        updateHeader();
+        if (heroMedia && window.innerWidth > 760 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          heroMedia.style.transform = `scale(1.055) translateY(${window.scrollY * 0.065}px)`;
+        }
+      }, { passive: true });
+
+      menuButton?.addEventListener('click', () => {
+        const open = menu?.classList.toggle('is-open');
+        menuButton.setAttribute('aria-expanded', String(Boolean(open)));
+      });
+      menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        menuButton?.setAttribute('aria-expanded', 'false');
+      }));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element));
+    </script> </body> </html>

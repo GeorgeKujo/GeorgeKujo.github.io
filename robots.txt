@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://georgekujo.com/sitemap.xml
+Sitemap: https://georgekujo.com/sitemap-index.xml

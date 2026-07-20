@@ -1,26 +1,26 @@
-# George Kujo Website V2.0
+# George Kujo — GitHub Pages 公開用一式
 
-## 主な追加
-- トップページをブランドサイトとして再設計
-- Research Hub (`research.html`) を新設
-- Featured Researchを4テーマに整理
-- Publicationsを直接リンク中心に再構成
-- Philosophyセクションを刷新
-- モバイル日本語切替とハンバーガーメニューを維持
-- PCのみ控えめなパララックス効果
-- SEO / OGP / JSON-LD
-- GitHub Pages / 独自ドメイン対応
+このフォルダーの中身を、GitHub Pagesで公開するリポジトリのルートへ配置してください。`index.html`がリポジトリ直下に見える状態が正しい配置です。
 
-## GitHubへの反映
-1. ZIPを解凍
-2. リポジトリ `GeorgeKujo.github.io` のルートへ全ファイルを上書きアップロード
-3. `assets` フォルダ内の画像3点もアップロード
-4. Commit changes
-5. 数分後に `https://georgekujo.com` を再読み込み
+## GitHub側の設定
 
-## 注意
-独自ドメインメール作成後、`index.html` と `research.html` の
-`george.kujo.irjp@gmail.com`
-を
-`contact@georgekujo.com`
-へ置換してください。
+1. リポジトリの「Settings」から「Pages」を開きます。
+2. 「Build and deployment」のSourceで「Deploy from a branch」を選びます。
+3. Branchを `main`、フォルダーを `/ (root)` にして保存します。
+4. 「Custom domain」に `georgekujo.com` を入力して保存します。
+5. 証明書の準備後、「Enforce HTTPS」を有効にします。
+
+## DNS設定
+
+ルートドメイン `georgekujo.com` のAレコードを、次のGitHub Pages用アドレスへ設定します。
+
+- `185.199.108.153`
+- `185.199.109.153`
+- `185.199.110.153`
+- `185.199.111.153`
+
+`www.georgekujo.com` も使う場合は、`www` のCNAMEを `<GitHubユーザー名>.github.io` に設定します。
+
+## 更新方法
+
+新しい公開一式を作成したときは、既存ファイルを新しい内容で置き換えます。`CNAME` と `.nojekyll` は削除しないでください。
