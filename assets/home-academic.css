@@ -1,0 +1,8 @@
+/* Featured journal publications and commentary on the home pages. */
+.academic-achievement { width: min(1040px, 100%); }
+.academic-achievement-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.academic-achievement-grid a { min-width: 0; gap: 8px; }
+.academic-achievement-grid small { overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .academic-achievement-grid { grid-template-columns: 1fr; }
+}
